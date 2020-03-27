@@ -1,21 +1,79 @@
 <!DOCTYPE html>
+
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
         <title>This is a CSS Practice website</title>
         <link rel="stylesheet" href="css/styles.css">
         <link rel="icon" href="favicon.ico">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Sacramento&display=swap" rel="stylesheet">
     </head>
     <body>
         <div class="top-container">
-            <h1>Jose Ramos</h1>
-            <p>a programmer</p>
+            <img class="top-cloud" src="images/cloud.png" alt="cloud-img">
+            <h1>I'm Jose Ramos</h1>
+            <h2 class="a-programmer">a <span class="pro">pro</span>grammer.</h2>
+            <img class="bottom-cloud" src="images/cloud.png" alt="cloud-img">
+            <img src="images/mountain.png" alt="mountain">
         </div>
         <div class="middle-container">
-
+          <div class="profile">
+            <img src="images/joseramos.png" alt="joseramos-img">
+            <h2>Hello!</h2>
+            <p class="my-bio">I am a computer science student passionated about mobile and web development. Graduating in May 2020 with an A.S. in Computer Science and perssuing a B.S. in UMass Lowell stating in Fall of 2020.</p>
+          </div>
+          <hr>
+          <div class="skills">
+            <h2>My Skills.</h2>
+            <div class="skill-row">
+                <table align="center">
+                    <tr>
+                        <td>
+                            <img class="website-img" src="https://image.flaticon.com/icons/svg/1055/1055687.svg" alt="">
+                        </td>
+                        <td>
+                            <h3>HTML5 and CSS3</h3>
+                            <p class="skill-description">I am very skilled using HTML5 and CSS3.</p>
+                        </td>
+                    </tr>
+                </table>
+                <!-----
+                <img class="html-img" src="https://image.flaticon.com/icons/svg/2721/2721267.svg" alt="">
+                <img class="css-img" src="https://image.flaticon.com/icons/svg/2721/2721214.svg" alt="">
+                ------>
+            </div>
+            <div class="skill-row">
+                <!-----
+                <img class="dart-img" src="https://miro.medium.com/max/480/0*JWyRX0OvflgVHFUF" alt="Dart-programming">
+                ------>
+                <table align="center">
+                    <tr>
+                        <td>
+                            <h3>Cross Platform Mobile Development With Flutter</h3>
+                            <p class="skill-description">I can built mobile application for Android and iOS devices using Flutter, the awesome google open source framework. This allow you to build native mobile application for different operationg systems with a single code base.</p>
+                        </td>
+                        <td>
+                            <img class="flutter-img" src="https://cdn.worldvectorlogo.com/logos/flutter-logo.svg" alt="Flutter">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+          </div>
+          <hr>
+          <div class="contact-me">
+            <h2>Get In Touch</h2>
+            <h3>I can help you!</h3>
+            <p>I’m currently available for freelance work. If you have a project that you want to get started or think you need my help with something, then get in touch!</p>
+            <a class="btn" href="mailto:joseramos.dev1@gmail.com">CONTACT ME</a>
+          </div>
         </div>
-        <div class="bottom-container">
 
+        <div class="bottom-container">
+          <a class="footer-link" href="https://www.linkedin.com/in/joseramosp/">LinkedIn</a>
+          <a class="footer-link" href="https://www.instagram.com/joseramos.dev/">Instagram</a>
+          <a class="footer-link" href="https://www.joseramos.dev">Website</a>
+          <a class="footer-link" href="https://github.com/joseramosp">GitHub</a>
+          <p class="copyright">© 2020 Jose Ramos.</p>
         </div>
     </body>
 </html>
