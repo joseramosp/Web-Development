@@ -7,6 +7,13 @@ h1{
     font-size: 3rem;
     line-height: 1.5;
 }
+h2 {
+    font-family: "Montserrat";
+    font-size: 3rem;
+    line-height: 1.5;
+    font-weight: bold;
+    font-style: italic;
+}
 h3 {
     font-weight: bold;
     font-size: 1.4rem;
@@ -17,10 +24,11 @@ p {
 #features {
     text-align: center;
     /* margin: 5rem 2rem; */
-    margin-top: 3rem;
+    /* margin-top: 3rem;
     margin-left: 8rem;
     margin-right: 8rem;
-    margin-bottom: 3rem;
+    margin-bottom: 3rem; */
+    padding: 7% 15%;
 }
 .features-icons {
     color: #EF8172;
@@ -59,4 +67,44 @@ p {
 }
 .download-button {
     margin: 5% 3% 5% 0;
+}
+
+/* Testimonial Section */
+
+#testimonials {
+    color: white;
+    background-color: #EF8172;
+    text-align: center;
+}
+
+.testimonial-image {
+    width: 10%;
+    border-radius: 100%;
+    margin: 20px;
+}
+
+#press {
+    background-color: #EF8172;
+    padding-bottom: 3%;
+    text-align: center;
+}
+.press-logo {
+    width: 15%;
+    margin: 20px 20px 50px;
+}
+.carousel-item {
+    padding: 7% 15%;
+}
+
+/* Pricing Section */
+
+#pricing {
+    text-align: center;
+    padding: 7% 15%;
+}
+.card {
+    /* height: 100%; */
+}
+.pricing-column {
+    padding: 3% 2%;
 }
