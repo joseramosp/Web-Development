@@ -47,4 +47,7 @@ buttons.forEach(function (drum) {
                 break;
         }
     });
+    addEventListener("keypress",function (){
+        console.log("working");
+    }).
 });
