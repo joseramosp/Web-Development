@@ -13,9 +13,11 @@ h1{
     opacity: 0.25;
 }
 
-.square {
-    width: 100px;
-    height: 100px;
+button:focus {outline:0;}
+
+button{
+    width: 200px;
+    height: 200px;
     border-radius: 15%;
     border-width: thick;
     border-color: black;
