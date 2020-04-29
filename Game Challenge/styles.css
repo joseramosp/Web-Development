@@ -1,12 +1,45 @@
+body{
+    background-color: #0A1F40;
+}
+
+h1{
+    color: #FCF3C4;
+    text-align: center;
+    margin: 3rem;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.pressed {
+    opacity: 0.25;
+}
+
 .square {
-    width: 50px;
-    height: 50px;
+    width: 100px;
+    height: 100px;
+    border-radius: 15%;
+    border-width: thick;
+    border-color: black;
+    margin: 1rem;
+    border-style: solid;
+}
+
+.squares-line{
+    display: flex;
+    justify-content: center;
 }
 
 .red {
     background-color: red;
 }
 
-.blue-square{
+.blue{
     background-color: blue;
+}
+
+.green{
+    background-color: green;
+}
+
+.yellow{
+    background-color: yellow;
 }
