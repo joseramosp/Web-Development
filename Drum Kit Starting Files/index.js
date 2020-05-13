@@ -17,6 +17,7 @@ addEventListener("keypress",function (event){
 
 function playSound(pressedKey){
     buttonAnimation(pressedKey);
+
     var audio;
     switch (pressedKey) {
         case "w":
