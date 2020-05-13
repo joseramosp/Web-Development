@@ -1,31 +1,12 @@
-var gameIsOver = true;
 var buttons = document.querySelectorAll("button");
 
 var sequence = [];
-var index = 0;
 var sequenceIndex = 0;
 var level = 1;
 
 buttons.forEach(function (button){
     pressedAnimation(button);
 });
-
-function addRandomColor(){
-    var index = Math.floor(Math.random() * 4)
-    sequence.push(buttons[index]);
-}
-
-function runSequence(){
-    var index = 0;
-    for(var i = 0; i < sequence.length; i++){
-        var buttons = sequence;
-        setTimeout(function () {
-            playSquare(buttons[index++]);
-        }, ((index++ + 1) * 1000));
-    }
-    index = 0;
-    sequenceIndex = 0;
-}
 
 function pressedAnimation(button){
     $(button).on("click", function(){
@@ -65,6 +46,23 @@ function userSelectedSquare(button){
     }
 }
 
+function addRandomColor(){
+    var index = Math.floor(Math.random() * 4)
+    sequence.push(buttons[index]);
+}
+
+function runSequence(){
+    var index = 0;
+    for(var i = 0; i < sequence.length; i++){
+        var buttons = sequence;
+        setTimeout(function () {
+            playSquare(buttons[index++]);
+        }, ((index++ + 1) * 1000));
+    }
+    index = 0;
+    sequenceIndex = 0;
+}
+
 function playSquare(button){
     $(button).addClass("pressed");
     setTimeout(function () {
@@ -77,6 +75,7 @@ function playSquare(button){
 
 $("body").on("keypress", function(){
         sequence = [];
+        level = 1;
         continueGame();
 });
 
